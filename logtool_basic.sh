@@ -41,5 +41,5 @@ logcat -d > $logs_path/$logcat
 lsusb > $logs_path/$lsusb
 cat /proc/cpuinfo > $logs_path/$cpuinfo
 
-print "\tDone. Few logs files were saved with names like:\n\t$dmesg\n\n\tYou can find the logs in ${brand}_${model} directory in location:\n\n\t1. Internal Storage - Remix OS full path:\n\t$logs_path\n\tCheck 'My Remix'(/storage/emulated/0) tab in the File Manager app to find the given path.\n\n\tIf you have feedback for us, be sure to visit our Remix-OS-For-PC GitHub repository and use the new logs there.\n\tRemix-OS-For-PC GitHub repository: https://goo.gl/ulxY75\n"
+print "\tDone. Few logs files were saved with names like:\n\t$dmesg\n\n\tYou can find the logs in ${brand}_${model} directory in location:\n\n\t1. Internal Storage - Remix OS full path:\n\t${logs_path}\n\tCheck 'My Remix'(/storage/emulated/0) tab in the File Manager app to find the given path.\n\n\tIf you have feedback for us, be sure to visit our Remix-OS-For-PC GitHub repository and use the new logs there.\n\tRemix-OS-For-PC GitHub repository: https://goo.gl/ulxY75\n"
 exit 0
