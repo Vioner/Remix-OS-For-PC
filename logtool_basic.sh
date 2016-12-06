@@ -22,7 +22,7 @@ model=$(getprop ro.product.model) && model=${model// /-}
 version=$(getprop ro.build.remixos.version) && version=${version// /-}
 system_arch=$(getprop ro.product.cpu.abi) && system_arch=${system_arch// /-}
 # Log naming
-pattern="BOOT-COMPLETE_${brand}_${model}_${version}_${system_arch}_$(date +%F_%H-%M).txt"
+pattern="BOOT-COMPLETE_${brand}_${model}_${version}-${system_arch}_$(date +%F_%H-%M).txt"
 logcat="logcat_${pattern}"
 dmesg="dmesg_${pattern}"
 lsmod="lsmod_${pattern}"
